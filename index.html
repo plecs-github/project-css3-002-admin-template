@@ -1,11 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Admin page</title>
+    <link rel="stylesheet" href="http://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
-    
+
+    <header class="header--dark">
+        <h3 class="header__title">Admin Page</h3>
+        <div class="header__search">
+            <i class="fas fa-bars"></i>
+            <input type="text" class="search__input">
+            <button class="search__btn"><i class="fas fa-search"></i></button>
+            <i class="fas fa-user"></i>
+        </div>
+
+        </div>
+    </header>
+
+    <main>
+        <aside>
+            <nav class="main__nav">
+                <ul class="nav__ul">
+                    <li>Core</li>
+                    <li><i class="fa fa-tachometer-alt"></i> Dashboard</li>
+                    <li>Interface</li>
+                    <li><i class="far fa-window-restore"></i> Layouts <span class="main__nav--span">></span> </li>
+                    <li><i class="fas fa-book-open"></i> Pages</li>
+                    <li>Addons</li>
+                    <li><i class="fas fa-chart-area"></i> Charts</li>
+                    <li><i class="fa fa-table"></i> Tables</li>
+                </ul>
+            </nav>
+        </aside>
+        <section class="content">
+            <h1>Dashboard</h1>
+            <div class="main__breadcrumb">Dashboard</div>
+            <div class="main__cards flex-container grid-container" ;>
+                <div class="main__cards main__card--blue">
+                    <div class="card__top">Primary Card</div>
+                    <div class="card__bottom">View Details ></div>
+                </div>
+                <div class="main__cards main__card--yellow">
+                    <div class="card__top">Warning Card</div>
+                    <div class="card__bottom">View Details ></div>
+                </div>
+                <div class="main__cards main__card--green">
+                    <div class="card__top">Success Card</div>
+                    <div class="card__bottom">View Details ></div>
+                </div>
+                <div class="main__cards main__card--red">
+                    <div class="card__top">Danger Card</div>
+                    <div class="card__bottom">View Details ></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
 </body>
+
 </html>
