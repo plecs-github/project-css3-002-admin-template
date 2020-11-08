@@ -13,11 +13,11 @@
 
     <header class="header--dark">
         <h3 class="header__title">Admin Page</h3>
-        <div class="header__search">
+        <div class="header__search header__flex-container">
             <i class="fas fa-bars"></i>
-            <input type="text" class="search__input">
+            <input type="text" class="search__input" value="Search for...">
             <button class="search__btn"><i class="fas fa-search"></i></button>
-            <i class="fas fa-user"></i>
+            <div class="header__icon--left"><i class="fas fa-user"></i> <i class="fas fa-caret-down"></i></div>
         </div>
 
         </div>
@@ -30,8 +30,11 @@
                     <li>Core</li>
                     <li><i class="fa fa-tachometer-alt"></i> Dashboard</li>
                     <li>Interface</li>
-                    <li><i class="far fa-window-restore"></i> Layouts <span class="main__nav--span">></span> </li>
-                    <li><i class="fas fa-book-open"></i> Pages</li>
+                    <li>
+                        <i class="far fa-window-restore"></i> Layouts <i class="fas fa-angle-right"></i </div>
+                    </li>
+                    <li><i class="fas fa-book-open"></i> Pages <span class="main__nav--span"><i
+                                class="fas fa-angle-right"></i></span></li>
                     <li>Addons</li>
                     <li><i class="fas fa-chart-area"></i> Charts</li>
                     <li><i class="fa fa-table"></i> Tables</li>
@@ -44,19 +47,32 @@
             <div class="main__cards flex-container grid-container" ;>
                 <div class="main__cards main__card--blue">
                     <div class="card__top">Primary Card</div>
-                    <div class="card__bottom">View Details ></div>
+                    <div class="card__bottom card__flex-container">
+                        <div class="card__div">View Details</div>
+                        <div><i class="fas fa-angle-right"></i></div>
+                    </div>
                 </div>
+
                 <div class="main__cards main__card--yellow">
                     <div class="card__top">Warning Card</div>
-                    <div class="card__bottom">View Details ></div>
+                    <div class="card__bottom card__flex-container">
+                        <div class="card__div">View Details</div>
+                        <div><i class="fas fa-angle-right"></i></div>
+                    </div>
                 </div>
                 <div class="main__cards main__card--green">
                     <div class="card__top">Success Card</div>
-                    <div class="card__bottom">View Details ></div>
+                    <div class="card__bottom card__flex-container">
+                        <div class="card__div">View Details</div>
+                        <div><i class="fas fa-angle-right"></i></div>
+                    </div>
                 </div>
                 <div class="main__cards main__card--red">
                     <div class="card__top">Danger Card</div>
-                    <div class="card__bottom">View Details ></div>
+                    <div class="card__bottom card__flex-container">
+                        <div class="card__div">View Details</div>
+                        <div><i class="fas fa-angle-right"></i></div>
+                    </div>
                 </div>
             </div>
         </section>
